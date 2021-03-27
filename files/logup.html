@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog site</title>
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-fixed-top navbar-inverse p-0">
+      <div class="d-flex justify-content-start align-items-center all-container">
+        <div class="navbar-header mr-4 align-items-center d-flex flex-row">
+          <img src="../assets/logo.png" alt="logo" width=25 height=25>
+          <a href="#" class="navbar-brand text-white-50 ml-2">Blog Site</a>
+        </div>
+        <ul class="nav navigation">
+          <li class="button">
+            <a href="../index.html" class="text-white-50">Home</a>
+          </li>
+          <li class="button">
+            <a href="./about.html" class="text-white-50">About</a>
+          </li>
+          <li class="button">
+            <a href="./edit.html" class="text-white-50">Edit</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="all-container mt-5">
+      <form class="form-signin w-50 m-auto">
+        <h1 class="h3 mb-3 font-weight-normal text-center">Please log up</h1>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control mb-3" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <p class="text-center mt-2">Gender</p>
+        <select class="custom-select">
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+        </select>
+        <p class="text-center mt-2">Birth date</p>
+        <input type="date" id="date" name="date" class="w-100" />
+        <!--This link leads to a table with information about the user.-->
+        <a class="btn btn-outline-dark mb-2 mt-3 w-100" href='./user.html'>Log up</a>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>
